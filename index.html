@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>Sedativ</title>
+<style>
+.item1 {grid-area: header;}
+.item2 {grid-area: prazno1;
+    color: white;
+}
+.item3 {grid-area: main;
+    color: white;
+}
+.item4 {grid-area: prazno2;
+    color: white;
+}
+.item5 {grid-area: footer;
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'main main main main main'
+    'footer footer footer footer footer';
+}
+.item {
+    background-color: black;
+    text-align: center;
+    font-size: 28pt;
+    border: 2px solid white;
+    height: 150px;
+}
+.main {
+    height: auto;
+}
+.prazno1 {
+    height: auto;
+}
+.prazno2 {
+    height: auto;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+li {
+    padding: 10px;
+    display: inline-block;
+    color: white;
+}
+.logo {
+    width: 8%;
+    height: 8%;
+}
+.grow {
+    transition: all .2s ease-in-out;
+}
+.grow:hover {
+    transform: scale(1.1);
+    color: #7ab84b;
+}
+.item5 {
+    background-color: black;
+}
+.footerslike {
+    height: 25%;
+    padding-top: 50px;
+}
+</style>
+<body>
+<div class="container">
+    <div class="item item1">
+        <ul>
+            <a href="o nama.html"><li class="grow">O nama</li></a>
+            <a href="index.html"><img src="slike/logo.png" class="logo grow"></a>
+            <a href="glazba.html"><li class="grow">Glazba</li></a>
+        </ul>
+    </div>
+    <div class="item item2 prazno1"></div>
+    <div class="item item3 main">
+        <h2>Naš najnoviji single</h2>
+        <iframe width="840" height="472" src="https://www.youtube.com/embed/3uzbYzqBdGU?si=XwAQPZH84cXyD7yx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h2>Galerija</h2>
+        <img src="slike/slika2.jpg" style="height: 400px;" class="grow">
+        <img src="slike/slika1.jpg" style="height: 400px;" class="grow">
+        <img src="slike/slika3.jpg" style="height: 400px;" class="grow">
+        <h2>Video spotovi</h2>
+        <iframe width="840" height="472" src="https://www.youtube.com/embed/Tp6lmpCrDW0?si=F1gu2bpFeJp1eKR5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="840" height="472" src="https://www.youtube.com/embed/5_x9XF-RWD8?si=CszSNhHfaGCS99ut" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="item item4 prazno2"></div>
+    <div class="item item5 footer">
+        <a href="https://www.facebook.com/SedativThrashMetal"><img src="slike/facebook.png" class="footerslike grow"></a> 
+        <a href="https://www.youtube.com/@Sedativ"><img src="slike/youtube.png" class="footerslike grow"></a>
+        <a href="https://instagram.com/sedativ.razarac?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr"><img src="slike/instagram.png" class="footerslike grow"></a>
+    </div>
+</div>
+</body>
+</html>
+
