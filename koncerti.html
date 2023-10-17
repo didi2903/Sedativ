@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Sedativ</title>
+<style>
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.item1 {grid-area: header;}
+.item2 {grid-area: blok1;
+    color: white;
+}
+.item3 {grid-area: blok2;
+    color: white;
+}
+.item4 {grid-area: blok3;
+    color: white;
+}
+.item5 {grid-area: footer;
+    color: white;
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'blok1'
+    'blok2'
+    'blok3'
+    'footer';
+}
+.item {
+    background-color: black;
+    text-align: center;
+    font-size: 28pt;
+    height: 150px;
+}
+.blok1 {
+    height: auto;
+    background-color: white;
+    color: black;
+    height: 67vh;
+}
+.blok2 {
+    height: auto;
+    background-color: black;
+    color: white;
+}
+.blok3 {
+    height: auto;
+    background-color: #7ab84b;
+    color: black;
+}
+.footer {
+    height: 150px;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+li {
+    padding: 10px;
+    display: inline-block;
+    color: white;
+}
+.logo {
+    width: 8%;
+    height: 8%;
+}
+.grow {
+    transition: all .2s ease-in-out;
+}
+.grow:hover {
+    transform: scale(1.1);
+    color: #7ab84b;
+}
+.item5 {
+    background-color: black;
+}
+.footerslike {
+    height: 20%;
+}
+
+</style>
+<body>
+<div class="container">
+    <div class="item item1">
+        <ul>
+            <a href="o nama.html"><li class="grow">O nama</li></a>
+            <a href="glazba.html"><li class="grow">Glazba</li></a>
+            <a href="index.html"><img src="slike/logo.png" class="logo grow"></a>
+            <a href="koncerti.html"><li class="grow">Koncerti</li></a>
+            <a href="kontakt.html"><li class="grow">Kontakt</li></a>
+        </ul>
+    </div>
+    <div class="item item2 blok1">
+        <h2>Trenutno nema budučih koncerti</h2>
+    </div>
+    <div class="item item5 footer">
+        <p style="font-size: 20pt;">Pratite nas na društvenim mrežama</p>
+        <a href="https://www.facebook.com/SedativThrashMetal" target="_blank"><img src="slike/facebook.png" class="footerslike grow"></a> 
+        <a href="https://www.youtube.com/@Sedativ" target="_blank"><img src="slike/youtube2.png" class="footerslike grow yt"></a>
+        <a href="https://instagram.com/sedativ.razarac?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr" target="_blank"><img src="slike/instagram.png" class="footerslike grow"></a>
+    </div>
+</div>
+</body>
+</html>
+
